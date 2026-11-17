@@ -1,0 +1,6 @@
+---
+app_image: "ghcr.io/daddybearw/devops-ci-app"
+app_tag: "bb196bc709df5b9004c709a0bf8aaca22b0e29eb"
+app_container_name: "devops-ci-app"
+app_host_port: 5000
+app_internal_port: 5000
