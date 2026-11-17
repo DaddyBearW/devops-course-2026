@@ -11,6 +11,7 @@
     tag: "{{ app_tag }}"
     source: pull
     state: present
+    timeout: 180
 
 - name: Run application container
   community.docker.docker_container:
@@ -18,6 +19,7 @@
     image: "{{ app_image }}:{{ app_tag }}"
     state: started
     restart_policy: unless-stopped
+    timeout: 180
     published_ports:
       - "127.0.0.1:{{ app_host_port }}:{{ app_internal_port }}"
 
